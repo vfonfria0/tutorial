@@ -4,14 +4,5 @@ sap.ui.define([
 ], function (Controller, MessageToast) {
    "use strict";
    return Controller.extend("root.controller.App", {
-      onShowHello : function () {
-         // read msg from i18n model
-         var oBundle = this.getView().getModel("i18n").getResourceBundle();
-         var sRecipientName = this.getView().getModel().getProperty("/recipient/name");
-         var sRecipientLastName = this.getView().getModel().getProperty("/recipient/lastName");
-         var sMsg = oBundle.getText("helloMsg", [sRecipientName,sRecipientLastName]);
-         // show message
-         MessageToast.show(sMsg);
-      }
    });
 });
