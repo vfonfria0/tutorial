@@ -13,7 +13,8 @@
       <beginButton>
          <Button
             text="{i18n>dialogCloseButtonText}"
-            press=".onCloseDialog"/>
+            press=".onCloseDialog"
+            class="myCustomButton"/>
       </beginButton>
    </Dialog>
 </core:FragmentDefinition>
